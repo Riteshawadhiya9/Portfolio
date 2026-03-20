@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import OverlayMenu from "./OverlayMenu";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo_white.png";
 import { TfiMenu } from "react-icons/tfi";
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
   const timerId = useRef(null);
 
   useEffect(() => {
-    const homeSection = document.querySelector("#Home");
+    const homeSection = document.querySelector("#home");
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

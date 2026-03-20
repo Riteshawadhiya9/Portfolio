@@ -12,7 +12,7 @@ useEffect(()=>{
     const ctx = canvas.getContext('2d');
 
     const particles = []
-    const particleCount = 100;
+    const particleCount = 60;
     const color = ["rgba(255, 255, 255, 0.7)", "rgba(255, 255, 255, 0.5)", "rgba(255, 255, 255, 0.3)"]
 
     class Particle {
