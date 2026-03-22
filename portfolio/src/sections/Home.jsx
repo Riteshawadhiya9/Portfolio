@@ -145,7 +145,7 @@ useEffect(()=>{
           /> */}
 
 
-          <motion.img src={avator} alt="Ritesh" 
+          <motion.img src={avator} alt="Ritesh_Awadhiya" 
           
           className='absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none'
           style = {{

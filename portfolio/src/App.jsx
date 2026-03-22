@@ -10,9 +10,20 @@ import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import ParticlesBackground from './components/ParticlesBackground'
 import CustomCursor from './components/CustomCursor'
+import IntroAnimation from './components/IntroAnimation'
+import { useState } from 'react'
 
 const App = () => {
+
+  const [introDone, setIntroDone] = useState(false);
+
   return (
+
+    <>
+    {!introDone && <IntroAnimation onFinish={()=> setIntroDone(true)}/>}
+
+    {introDone && (
+
     <div className='relative gradient text-white'>
 
     <CustomCursor/>
@@ -28,6 +39,10 @@ const App = () => {
      <Contact/>
      <Footer/>
     </div>
+
+    )}
+
+    </>
   )
 }
 
