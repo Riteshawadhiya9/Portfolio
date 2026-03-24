@@ -33,7 +33,7 @@ const OverlayMenu = ({ isOpen, onClose }) => {
             {[
               "Home",
               "About",
-              "Skill",
+              "Skills",
               "Projects",
               "Experience",
               "Testimonials",
