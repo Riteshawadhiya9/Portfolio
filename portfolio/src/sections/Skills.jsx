@@ -27,7 +27,7 @@ const Skills = () => {
   return (
     <section 
     id='skills'
-    className='h-screen w-ful pb-8 flex flex-col items-center justify-center relative bg-black text-white overflow-hidden'>
+    className='min-h-screen w-full py-20 px-4 flex flex-col items-center justify-center relative bg-black text-white overflow-hidden'>
 
       <ParticlesBackground/>
 
@@ -39,7 +39,7 @@ const Skills = () => {
 
       </div>
 
-      <motion.h2 className='text-4xl mt-5 sm:text-5xl font-bold bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#1cd8d2] bg-clip-text text-transparent z-10'
+      <motion.h2 className='text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#1cd8d2] bg-clip-text text-transparent z-10 mb-4'
       
       initial={{ opacity: 0, y: -30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -49,20 +49,20 @@ const Skills = () => {
         Skills & Tools
       </motion.h2>
 
-      <div className='grid grid-cols-6 gap-6 mt-12 px-4 z-10 max-w-7xl'>
+      <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-4 md:gap-6 mt-8 sm:mt-10 md:mt-12 z-10 max-w-7xl w-full'>
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className='flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-900 border border-cyan-500/30 hover:border-cyan-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20'
+            className='flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl bg-slate-900 border border-cyan-500/30 hover:border-cyan-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20'
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.02 }}
             whileHover={{ y: -5 }}
           >
-            <div className='text-5xl mb-3' style={{ color: skill.color }}>
+            <div className='text-3xl sm:text-4xl md:text-5xl mb-2 sm:mb-3' style={{ color: skill.color }}>
               {skill.icon}
             </div>
-            <p className='text-white font-medium capitalize text-center text-sm'>{skill.name}</p>
+            <p className='text-white font-medium capitalize text-center text-xs sm:text-sm'>{skill.name}</p>
           </motion.div>
         ))}
       </div>
