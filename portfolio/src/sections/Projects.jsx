@@ -20,7 +20,7 @@ const Projects = () => {
       technologies: ['React.js' , 'Tailwind CSS' , 'Three.js' , 'GSAP' , 'Vite' , 'Framer Motion'],
       links: {
         github: 'https://github.com/Riteshawadhiya9/3D_Gaming_Website',
-        live: ''
+        live: 'https://redefine-gaming26.netlify.app/'
       }
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
       technologies: ['HTML' , 'CSS' , 'JavaScript'],
       links: {
         github: 'https://github.com/Riteshawadhiya9/Image-Editor',
-        live: ''
+        live: 'image-editor26.netlify.app'
       }
     },
     {

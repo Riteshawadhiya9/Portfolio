@@ -34,8 +34,8 @@ const App = () => {
      <About/>
      <Skills/>
      <Projects/>
-     <Experience/>
-     <Testimonials/>
+     {/* <Experience/>
+     <Testimonials/> */}
      <Contact/>
      <Footer/>
     </div>
