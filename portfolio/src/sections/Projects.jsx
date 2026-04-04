@@ -31,7 +31,7 @@ const Projects = () => {
       technologies: ['HTML' , 'CSS' , 'JavaScript'],
       links: {
         github: 'https://github.com/Riteshawadhiya9/Image-Editor',
-        live: 'image-editor26.netlify.app'
+        live: 'https://image-editor26.netlify.app/'
       }
     },
     {
@@ -42,7 +42,7 @@ const Projects = () => {
       technologies: ['HTML' , 'CSS' , 'JavaScript'],
       links: {
         github: 'https://github.com/Riteshawadhiya9/Snake_Game',
-        live: ''
+        live: 'https://snakeio26.netlify.app/'
       }
     },
     // {
