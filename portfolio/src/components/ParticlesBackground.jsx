@@ -11,7 +11,7 @@ useEffect(()=>{
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
 
-    const particles = []
+    let particles = []
     const particleCount = 60;
     const color = ["rgba(255, 255, 255, 0.7)", "rgba(255, 255, 255, 0.5)", "rgba(255, 255, 255, 0.3)"]
 
@@ -48,17 +48,26 @@ useEffect(()=>{
     }
 
     function createParticles(){
+        particles = [];
         for(let i=0; i<particleCount; i++){
             particles.push(new Particle());
         }
     }
 
+    let resizeTimeout;
     function handleResize(){
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-        createParticles();
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            createParticles();
+        }, 150);
     }
-    handleResize();
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    createParticles();
+    
     window.addEventListener('resize', handleResize);
 
     let animationId;
@@ -72,13 +81,15 @@ useEffect(()=>{
  
     return () => {
         cancelAnimationFrame(animationId);
+        clearTimeout(resizeTimeout);
         window.removeEventListener('resize', handleResize);
     }
 
 },[])
 
   return (
-   <canvas ref={canvasRef} className='fixed top-0 left-0 w-full h-full pointer-events-none z-0'>
+   <canvas ref={canvasRef} className='fixed top-0 left-0 pointer-events-none z-0'
+           style={{display: 'block', width: '100vw', height: '100vh'}}>
 
    </canvas>
   )

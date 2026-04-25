@@ -11,6 +11,7 @@ import Footer from './sections/Footer'
 import ParticlesBackground from './components/ParticlesBackground'
 import CustomCursor from './components/CustomCursor'
 import IntroAnimation from './components/IntroAnimation'
+import MusicPlayer from './components/MusicPlayer'
 import { useState } from 'react'
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
     <div className='relative gradient text-white'>
 
     <CustomCursor/>
+    <MusicPlayer/>
     <ParticlesBackground/>
 
      <Navbar/>
