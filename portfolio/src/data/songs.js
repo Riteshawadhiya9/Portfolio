@@ -4,29 +4,36 @@ import PublicAudioLoop from '../assets/public_audio_loop.mp3';
 import Brazil from '../assets/Brazil.mp3';
 import Ophelia from '../assets/The_Fate_of_Ophelia.mp3';
 import Wellerman from '../assets/Wellerman_Nathan_Evans.mp3';
+import Raspitin from '../assets/Rasputin.mp3';
 
 
 export const SONGS = [
   {
     id: 1,
+    title: "Raspitin",
+    artist: "Your Name",
+    url: Raspitin
+  },
+  {
+    id: 2,
     title: "If We Have Each Other",
     artist: "Your Name",
     url: IfWeHaveEachOther
   },
   {
-    id: 2,
+    id: 3,
     title: "Just A Boy",
     artist: "Your Name",
     url: JustABoy
   },
   {
-    id: 3,
+    id: 4,
     title: "Public Audio Loop",
     artist: "Your Name",
     url: PublicAudioLoop
   },
 //   {
-//     id: 4,
+//     id: 6,
 //     title: "To Brazil",
 //     artist: "Your Name",
 //     url: Brazil
@@ -38,7 +45,7 @@ export const SONGS = [
     url: Ophelia
   },
 //   {
-//     id: 6,
+//     id: 7,
 //     title: "Wellerman",
 //     artist: "Your Name",
 //     url: Wellerman
