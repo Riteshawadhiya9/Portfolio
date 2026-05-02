@@ -5,6 +5,7 @@ import Redefine from '../assets/Redefine.png'
 import Image_Editor from '../assets/Image_Editor.png'
 import snake_game from '../assets/snake_game.png'
 import Task_Organizer from '../assets/Task_Organizer.png'
+import Notes_project from '../assets/Notes_project.png'
 
 
 
@@ -45,17 +46,17 @@ const Projects = () => {
         live: 'https://snakeio26.netlify.app/'
       }
     },
-    // {
-    //   id: 4,
-    //   image: Task_Organizer,
-    //   title: 'Task_Organizer',
-    //   description: 'A simple yet effective task organizer application built with modern web technologies. It allows users to create, manage, and track their daily tasks with features like due dates, priority levels, and status updates. The app provides a clean and intuitive interface for seamless task management.',
-    //   technologies: ['HTML' , 'CSS' , 'JavaScript'],
-    //   links: {
-    //     github: '',
-    //     live: ''
-    //   }
-    // },
+    {
+      id: 4,
+      image: Notes_project,
+      title: 'Notes-App',
+      description: 'Notes App — A feature-rich frontend note-taking app built with React, Vite, and Tailwind CSS. Designed with a clean, dark-themed UI that adapts seamlessly across devices — offering a two-column layout on desktop and a tabbed interface on mobile. Core features include full CRUD operations, note pinning, real-time search and filtering, clipboard copy, and toast notifications for user feedback. A character counter in the editor adds a small but thoughtful touch to the overall experience.',
+      technologies: ['HTML' , 'CSS' , 'JavaScript'],
+      links: {
+        github: 'https://github.com/Riteshawadhiya9/Notes_Project',
+        live: 'https://notes-project-43.vercel.app/'
+      }
+    },
     {
       id: 5,
       image: '',
@@ -139,6 +140,7 @@ const Projects = () => {
                   description={project.description}
                   technologies={project.technologies}
                   links={project.links}
+                  number={index + 1}
                 />
               </motion.div>
             </motion.div>
@@ -151,13 +153,19 @@ const Projects = () => {
 
 
 // Project Card Component
-const ProjectCard = ({ image, title, description, technologies, links }) => {
+const ProjectCard = ({ image, title, description, technologies, links, number }) => {
   return (
     <motion.div 
-      className='w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-xl overflow-hidden border border-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/30 flex flex-col group'
+      className='w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-xl overflow-hidden border border-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/30 flex flex-col group relative'
       initial={{ borderColor: 'rgba(6, 182, 212, 0.2)' }}
       whileHover={{ borderColor: 'rgba(0, 191, 143, 0.6)' }}
     >
+      <div 
+        className='absolute top-2 left-2 bg-slate-800/50 text-cyan-400 text-xs font-bold px-2 py-1 rounded-full z-10'
+        style={{ textShadow: '0 0 8px rgba(28, 216, 210, 0.8)' }}
+      >
+        {number}
+      </div>
       {/* Project Image Container */}
       <div className='h-40 bg-gradient-to-b from-slate-800 to-slate-900 overflow-hidden relative flex-shrink-0'>
         {image ? (
