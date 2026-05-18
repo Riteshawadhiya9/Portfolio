@@ -7,6 +7,7 @@ import snake_game from "../assets/snake_game.png";
 import Task_Organizer from "../assets/Task_Organizer.png";
 import Notes_project from "../assets/Notes_project.png";
 import Code_Reviewer from "../assets/Code-Reviewer.png";
+import Quiz from "../assets/Quiz_project.png";
 
 // Projects Section
 const Projects = () => {
@@ -41,6 +42,17 @@ const Projects = () => {
       links: {
         github: "https://github.com/Riteshawadhiya9/Code_Reviewer",
         live: "",
+      },
+    },
+    {
+      id: 8,
+      image: Quiz,
+      title: "The Mock Arena",
+      description: "Quiz_App is a dark-themed, browser-based quiz platform built for MNC placement preparation. Simply select a subject, pick your difficulty level, and get 850+ curated MCQs covering DSA, Java OOP, Computer Networks, SQL, DBMS, Operating Systems, JavaScript, and React.js. Each answer gives instant feedback with a detailed explanation, your score is tracked live, and progress is saved automatically so you can resume anytime.",
+      technologies: ["React.js","Gemini API", "Tailwind CSS", "Vercel", "localStorage API"],
+      links: {
+        github: "https://github.com/Riteshawadhiya9/Quiz_App",
+        live: "https://quiz-app-six-eta-30.vercel.app/",
       },
     },
     {
@@ -81,6 +93,17 @@ const Projects = () => {
     },
     {
       id: 6,
+      image: "",
+      title: "",
+      description: "",
+      technologies: [],
+      links: {
+        github: "",
+        live: "",
+      },
+    },
+    {
+      id: 7,
       image: "",
       title: "",
       description: "",
