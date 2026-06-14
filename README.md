@@ -11,6 +11,9 @@ Animated intro, ambient particles, a floating music player, fluid Framer Motion 
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-EF008F?logo=framer&logoColor=white&style=flat-square)](https://www.framer.com/motion/)
 [![EmailJS](https://img.shields.io/badge/EmailJS-4-orange?style=flat-square)](https://www.emailjs.com/)
 [![Netlify](https://img.shields.io/badge/Deployed_on-Netlify-00C7B7?logo=netlify&logoColor=white&style=flat-square)](https://netlify.com)
+[![Live Site](https://img.shields.io/badge/Live_Site-riteshawadhiya.me-blueviolet?style=flat-square)](https://www.riteshawadhiya.me/)
+
+🌐 **[View Live Site → riteshawadhiya.me](https://www.riteshawadhiya.me/)**
 
 </div>
 
@@ -220,7 +223,9 @@ The player auto-advances to the next track when a song ends.
 
 ## 🌐 Deployment
 
-This is a fully static site after `npm run build`. Deploy the generated `dist/` folder to any static host:
+This is a fully static site after `npm run build`. Deploy the generated `dist/` folder to any static host.
+
+> 🚀 **Live at [riteshawadhiya.me](https://www.riteshawadhiya.me/)**
 
 ### Netlify (recommended)
 
@@ -266,7 +271,8 @@ npm run build
 | Platform | Link |
 |----------|------|
 | GitHub | [@Riteshawadhiya9](https://github.com/Riteshawadhiya9) |
-| Portfolio | [codolio.com/profile/Riteshawadhiya](https://codolio.com/profile/Riteshawadhiya) |
+| Portfolio | [riteshawadhiya.me](https://www.riteshawadhiya.me/) |
+| Codolio | [codolio.com/profile/Riteshawadhiya](https://codolio.com/profile/Riteshawadhiya) |
 
 Or use the **Contact** form on the live site to send a message directly.
 
