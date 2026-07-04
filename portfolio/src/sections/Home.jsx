@@ -9,7 +9,7 @@ import avator from "../assets/avator.png";
 
 const social = [
   { Icon: FaXTwitter, label: "X", href: "" },
-  { Icon: FaLinkedin, label: "LinkedIn", href: "" },
+  { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/ritesh-awadhiya-ba97a23a2" },
   { Icon: FaGithub, label: "GitHub", href: "https://github.com/Riteshawadhiya9" },
   { Icon: CustomPortfolio, label: "Portfolio", href: "https://codolio.com/profile/Riteshawadhiya" },
 ]
